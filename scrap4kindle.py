@@ -17,6 +17,7 @@ count = 1
 links = open("links.txt","r").readlines()
 
 for link in links:
-	convert_to_html(link,count)
+	counter = str(count).zfill(5)
+	convert_to_html(link,counter)
 	count = count + 1
 
